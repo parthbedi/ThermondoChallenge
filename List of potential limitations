@@ -1,0 +1,17 @@
+List of potential limitations and problems that could arise while implementing the described solution:
+
+Governor Limits: Salesforce limits the number of callouts, CPU time, and queries. Large data volumes or excessive API calls could hit these limits.
+
+Error Handling: Inadequate error handling might lead to issues in identifying and resolving failures during callouts.
+
+Test Coverage: Achieving comprehensive test coverage, especially for callouts and error scenarios, can be challenging.
+
+Scalability: Handling a large number of fulfilled orders might cause performance issues or timeouts during callouts.
+
+Duplicate Email Prevention: Ensuring customers don't receive duplicate emails might require sophisticated tracking mechanisms.
+
+Flow Triggers: Managing the Flow trigger logic to execute the Invocable Apex Action accurately on Order Status change might need careful consideration and testing.
+
+Code Maintainability: Ensuring the code is maintainable and easily understandable for future updates or enhancements.
+
+Addressing these limitations would involve robust error handling, efficient data processing, implementing appropriate test scenarios, and creating scalable solutions.

@@ -1,0 +1,16 @@
+Layering code involves organizing functionality into different layers to improve maintainability, scalability, and readability.
+
+Presentation Layer (Flow):
+Handles the user interface and triggers the Invocable Apex Action on Order Status change.
+
+Service Layer (NPSIntegration):
+Invocable Apex Action that accepts Order Record Ids, retrieves necessary data, and performs the HTTP callouts to the NPS Service.
+
+Data Access Layer (OrderDataProvider):
+Handles the retrieval of Order and Contact data needed for the NPS integration.
+
+Integration Layer (NPSApiService):
+Manages the actual HTTP callouts to the NPS Service and handles response handling.
+
+By separating concerns into these layers, each layer has a specific responsibility, making the code more modular, easier to maintain, and enhancing its scalability. The Service Layer acts as the orchestrator, coordinating actions between the other layers.
+

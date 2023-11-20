@@ -1,3 +1,5 @@
+//Description : Coordinates actions between order data, contact data, and the NPS API.
+//It doesn't handle data retrieval or HTTP callouts directly but coordinates these actions.
 public class NPSIntegration {
     private static final Set<String> sentEmails = new Set<String>();
 
